@@ -289,6 +289,8 @@ export default {
                 }
 
                 this.$emit('change', newVal);
+            } else if (newVal != oldVal) {
+              this.$emit('change', newVal);
             }
         },
 
